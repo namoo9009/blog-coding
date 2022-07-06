@@ -2,9 +2,46 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div {
+  box-sizing: border-box;
+}
+
+.nav__black {
+  padding: 20px 0;
+  padding-left: 20px;
+  display: flex;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.list {
+  /* display: flex; */
+  position: relative;
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid grey;
+}
+.list .title {
+  display: inline-block;
+  padding-right: 5px;
+  cursor: pointer;
+}
+.list .good-btn {
+  padding-right: 5px;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.list .delete-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 200px;
+}
+.modal {
+  padding: 20px;
+  text-align: left;
+  background-color: #eee;
 }
 
 @media (prefers-reduced-motion: no-preference) {
